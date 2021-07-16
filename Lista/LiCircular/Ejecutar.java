@@ -1,13 +1,20 @@
 package Lista.LiCircular;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Ejecuctar {
+public class Ejecutar {
+    public static void main(String[] args) throws IOException{
+        
+    
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int valor, referencia, posicion, op;
+    
     String continuar;
+
     ListaCircular li = new ListaCircular();
+    
 
     do
     {
@@ -24,8 +31,12 @@ public class Ejecuctar {
         switch(op){
             case 1:
             System.out.println(li.getTamanio()+"Tamaño");
+
             case 2:
-            System.out.println(li.getTamanio()+"Tamaño");
+            System.out.println("Ingrese el valor del nodo a insertar: ");
+            valor=Integer.parseInt(br.readLine());
+            li.agregarAlFinal(valor);
+            break;
 
             case 3:
             System.out.println("Ingrese el valor del nodo a insertar: ");
@@ -33,12 +44,15 @@ public class Ejecuctar {
             li.agregarAlInicio(valor);
             break;
 
-            
+
             case 4:
             li.Lista();
             break;
         }
-
+        System.out.println("Desea Continiar S/N");
+        continuar=br.readLine().toUpperCase();
     }while(continuar.equals("S"));
+    }
+}
 
-}}
+
