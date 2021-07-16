@@ -46,7 +46,7 @@ public class Ejecutar {
 
 
             case 4:
-            li.Lista();
+            li.listar();;
             break;
         }
         System.out.println("Desea Continiar S/N");
