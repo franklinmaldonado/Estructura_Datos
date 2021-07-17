@@ -23,7 +23,8 @@ public class Ejecutar {
         System.out.println("2.-Ingresar al final");
         System.out.println("3.-Ingresar al Inicio");
         System.out.println("4.-Lista");
-
+        System.out.println("5.-Remover por posicion");
+        System.out.println("6.-Editar por referencia");
         System.out.println("Ingrese la opcion que desea: ");
         op = Integer.parseInt(br.readLine());
 
@@ -48,6 +49,14 @@ public class Ejecutar {
             case 4:
             li.listar();;
             break;
+
+            case 5:
+            System.out.println("Ingrese la posicon: ");
+            valor=Integer.parseInt(br.readLine());
+            li.removerPorPosicion(valor);
+            break;
+
+            
         }
         System.out.println("Desea Continiar S/N");
         continuar=br.readLine().toUpperCase();
