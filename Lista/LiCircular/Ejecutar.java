@@ -25,6 +25,9 @@ public class Ejecutar {
         System.out.println("4.-Lista");
         System.out.println("5.-Remover por posicion");
         System.out.println("6.-Editar por referencia");
+        System.out.println("7.-Editar por posicion");
+        System.out.println("8.-Remover por Posicion");
+
         System.out.println("Ingrese la opcion que desea: ");
         op = Integer.parseInt(br.readLine());
 
@@ -56,7 +59,30 @@ public class Ejecutar {
             li.removerPorPosicion(valor);
             break;
 
+            case 6:
+            System.out.println("Ingrese la Referencia: ");
+            referencia=Integer.parseInt(br.readLine());
+            System.out.println("Ingrese el Valor: ");
+            valor=Integer.parseInt(br.readLine());
+            li.editarPorReferencia(referencia, valor);
+            break;
+
+            case 7:
+            System.out.println("Ingrese la Posicion: ");
+            posicion=Integer.parseInt(br.readLine());
+            System.out.println("Ingrese el Valor: ");
+            valor=Integer.parseInt(br.readLine());
+            li.editarPorPosicion(posicion, valor);
+            break;
+
+            case 8:
+            System.out.println("Ingrese la Posicion: ");
+            posicion=Integer.parseInt(br.readLine());
             
+            li.removerPorPosicion(posicion);
+            break;
+
+
         }
         System.out.println("Desea Continiar S/N");
         continuar=br.readLine().toUpperCase();
