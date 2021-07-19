@@ -1,4 +1,4 @@
-package Documentos.Pila;
+package Pila;
 
 public class Nodo {
     // Variable en la cual se va a guardar el valor.

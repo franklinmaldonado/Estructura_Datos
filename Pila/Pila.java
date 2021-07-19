@@ -1,4 +1,4 @@
-package Documentos.Pila;
+package Pila;
 
 public class Pila {
     // Puntero que indica el inicio de la pila o tambein conocida como el
