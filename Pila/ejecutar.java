@@ -19,14 +19,14 @@ public class ejecutar {
         do
         {
             System.out.println("-----Menu-----");
-            System.out.println("1.-Obtener el Tamaño");
-            System.out.println("2.-Ingresar al final");
-            System.out.println("3.-Ingresar al Inicio");
-            System.out.println("4.-Lista");
-            System.out.println("5.-Remover por posicion");
-            System.out.println("6.-Editar por referencia");
-            System.out.println("7.-Editar por posicion");
-            System.out.println("8.-Remover por Posicion");
+            System.out.println("1.-Apilar lista");
+            System.out.println("2.-Eliminar Valor final");
+            System.out.println("3.-Concultar el Valor Inicial");
+            System.out.println("4.-");
+            System.out.println("5.-");
+            System.out.println("6.-");
+            System.out.println("7.-");
+            System.out.println("8.-");
     
             System.out.println("Ingrese la opcion que desea: ");
             op = Integer.parseInt(br.readLine());
@@ -37,20 +37,20 @@ public class ejecutar {
                 System.out.println(li.getTamanio()+"Tamaño");
 
                 case 2:
-                System.out.println("Ingrese el valor del nodo a insertar: ");
-                valor=Integer.parseInt(br.readLine());
-                li.apilar(valor);
+                System.out.println("Eliminando valor final........ ");
+                li.retirar();
                 break;
     
                 case 3:
-                System.out.println("Ingrese el valor del nodo a insertar: ");
-                valor=Integer.parseInt(br.readLine());
-                li.retirar();
+                System.out.println("El valor Inicial es: ");
+                li.cima();
                 break;
     
     
                 case 4:
-                li.listar();;
+                System.out.println("Ingrese la referencia: ");
+                referencia=Integer.parseInt(br.readLine());
+                li.buscar(referencia);
                 break;
     
                 case 5:
@@ -62,8 +62,6 @@ public class ejecutar {
                 case 6:
                 System.out.println("Ingrese la Referencia: ");
                 referencia=Integer.parseInt(br.readLine());
-                System.out.println("Ingrese el Valor: ");
-                valor=Integer.parseInt(br.readLine());
                 li.buscar(referencia);
                 break;
     
