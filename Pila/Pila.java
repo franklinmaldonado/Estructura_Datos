@@ -25,6 +25,7 @@ public class Pila {
      * @return numero entero entre [0,n] donde n es el numero de elementos
      * que contenga la lista.
      */
+    //Listo
     public int getTamanio(){
         return tamanio;
     }
@@ -32,6 +33,7 @@ public class Pila {
      * Agrega un nuevo nodo a la pila.
      * @param valor a agregar.
      */
+    //Listo
     public void apilar(int valor){
         // Define un nuevo nodo.
         Nodo nuevo = new Nodo();
@@ -53,6 +55,7 @@ public class Pila {
     /**
      * Elimina el elemento que se encuentra en el tope de la piala.
      */
+    //Listo
     public void retirar(){
         if (!esVacia()) {
             // Asigna como primer nodo al siguiente de la pila.
@@ -66,6 +69,7 @@ public class Pila {
      * @return valor del nodo.
      * @throws Exception 
      */
+    //Listo
     public int cima() throws Exception{
         if(!esVacia()){
             return inicio.getValor();
@@ -78,6 +82,7 @@ public class Pila {
      * @param referencia valor del nodo a buscar.
      * @return true si el valor de referencia existe en la pila.
      */
+    //Listo
     public boolean buscar(int referencia){
         // Crea una copia de la pila.
         Nodo aux = inicio;
@@ -102,7 +107,8 @@ public class Pila {
     /**
      * Elimina un nodo de la pila ubicado por su valor.
      * @param referencia valor de referencia para ubicar el nodo.
-     */  
+     */ 
+     //Listo
     public void remover(int referencia){
         // Consulta si el valor existe en la pila.
         if (buscar(referencia)) {
@@ -147,10 +153,11 @@ public class Pila {
         }
     }    
     /**
-     * Actualiza el valor de un nodo en la pila.
-     * @param referencia valor del nodo para ubicar el que se desea actualizar.
-     * @param valor por el cual se desea remplazar el valor del nodo.
-     */
+    * Actualiza el valor de un nodo en la pila.
+    * @param referencia valor del nodo para ubicar el que se desea actualizar.
+    * @param valor por el cual se desea remplazar el valor del nodo.
+    */
+    //Listo
     public void editar(int referencia, int valor){
         // Consulta si el nodo existe en la pila
         if (buscar(referencia)) {
@@ -196,6 +203,7 @@ public class Pila {
     /**
      * Elimina la pila
      */
+    //Listo
     public void eliminar(){
         // Elimina el valor y la referencia a los demas nodos.
         inicio = null;

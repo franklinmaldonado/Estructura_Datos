@@ -21,13 +21,16 @@ public class ejecutar {
             System.out.println("-----Menu-----");
             System.out.println("1.-Apilar lista");
             System.out.println("2.-Eliminar Valor final");
-            System.out.println("3.-Concultar el Valor Inicial");
-            System.out.println("4.-");
-            System.out.println("5.-");
-            System.out.println("6.-");
-            System.out.println("7.-");
-            System.out.println("8.-");
-    
+            System.out.println("3.-Consultar el Valor Inicial");
+            System.out.println("4.-Agrega un nuevo nodo a la pila");
+            System.out.println("5.-Buscar elemento en la pila");
+            System.out.println("6.-Elimina un nodo de la pila ubicado por su valor");
+            System.out.println("7.-Actualiza el valor de un nodo en la pila");
+            System.out.println("8.-Elimina la pila");
+            System.out.println("9.-Despliega en pantalla los elementos de la pìla");
+            System.out.println("10.-Ingrese Datos");
+
+
             System.out.println("Ingrese la opcion que desea: ");
             op = Integer.parseInt(br.readLine());
     
@@ -45,54 +48,46 @@ public class ejecutar {
                 System.out.println("El valor Inicial es: ");
                 li.cima();
                 break;
-    
-    
+                    
                 case 4:
-                System.out.println("Ingrese la referencia: ");
-                referencia=Integer.parseInt(br.readLine());
-                li.buscar(referencia);
+                System.out.println("Ingrese la nuevo valor: ");
+                valor=Integer.parseInt(br.readLine());
+                li.apilar(valor);
                 break;
     
                 case 5:
-                System.out.println("Ingrese la posicon: ");
-                valor=Integer.parseInt(br.readLine());
-                li.cima();
+                System.out.println("Ingrese Referencia: ");
+                referencia=Integer.parseInt(br.readLine());
+                li.buscar(referencia);
                 break;
     
                 case 6:
-                System.out.println("Ingrese la Referencia: ");
+                System.out.println("Ingrese el dato a eliminar: ");
                 referencia=Integer.parseInt(br.readLine());
-                li.buscar(referencia);
+                li.remover(referencia);
                 break;
     
                 case 7:
                 System.out.println("Ingrese la Posicion: ");
-                posicion=Integer.parseInt(br.readLine());
+                referencia=Integer.parseInt(br.readLine());
                 System.out.println("Ingrese el Valor: ");
                 valor=Integer.parseInt(br.readLine());
-                li.remover(referencia);
+                li.editar(referencia, valor);
                 break;
     
                 case 8:
-                System.out.println("Ingrese la Posicion: ");
-                posicion=Integer.parseInt(br.readLine());
-                
-                li.editar(referencia, valor);
-                break;
-
-                case 9:
-                System.out.println("Ingrese la Posicion: ");
-                posicion=Integer.parseInt(br.readLine());
-                
                 li.eliminar();
                 break;
 
-                case 10:
-                System.out.println("Ingrese la Posicion: ");
-                posicion=Integer.parseInt(br.readLine());
-                
+                case 9:
                 li.listar();
                 break;
+
+                case 10:
+                li.Pila();
+                break;
+
+                
     
     
             }
