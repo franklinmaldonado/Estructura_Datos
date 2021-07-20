@@ -91,7 +91,7 @@ public class ejecutar {
     
     
             }
-            System.out.println("Desea Continiar S/N");
+            System.out.println("Desea Continiar Con La Ejecucion S/N");
             continuar=br.readLine().toUpperCase();
         }while(continuar.equals("S"));
         }
