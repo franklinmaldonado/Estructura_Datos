@@ -9,10 +9,12 @@ public class prueba {
     public void Mat(){
      
     }
+    
     public Mat(int f, int c){
      filas=f;
      columnas=c;
      Mat=new int [filas][columnas];
+     
     }
     
     public void Llenar(int valor, int i, int j){
