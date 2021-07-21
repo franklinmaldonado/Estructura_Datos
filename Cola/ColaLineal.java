@@ -1,7 +1,7 @@
 package Cola;
 
 public class ColaLineal {
-    private static fin int MAXTAMQ = 39;
+    private static final int MAXTAMQ = 39;
     protected int frente;
     protected int fin;
     protected TipoDeDato [] listaCola;
