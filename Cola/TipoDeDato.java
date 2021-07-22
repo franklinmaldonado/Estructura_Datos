@@ -34,7 +34,7 @@ package Cola;
                     
                     System.out.println("Ingrese el Valor: ");
                     elemento=Integer.parseInt(br.readLine());
-                    li.insertar(elemento);
+                    //li.insertar(elemento);
                     break;
 
                     case 2:
