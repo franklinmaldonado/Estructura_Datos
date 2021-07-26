@@ -7,14 +7,14 @@ public class ordennum {
     public static void main(String[] args) throws NumberFormatException, IOException {
         int op;
         int a[][], fila, columna;
-        String continuar;
+     
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("---MENU---");
         System.out.println("1.-ORDENAMIENTO DATOS QUITSHORT");
         System.out.println("2.INGRESO MATRIZ");
         op = teclado.nextInt();
-        do {
+       
 
             switch (op) {
 
@@ -37,7 +37,11 @@ public class ordennum {
                         System.out.print("\t" + arreglo[i]);
                     }
                     break;
+
+
                 case 2:
+
+                
                     BufferedReader br;
 
                     br = new BufferedReader(new InputStreamReader(System.in));
@@ -64,9 +68,8 @@ public class ordennum {
                         System.out.println();
                     }
             }
-            System.out.println("Desea Continiar Con La Ejecucion S/N");
-            continuar = teclado.nextInt();
-        } while (continuar.equals("S"));
+        
+        
 
     }
 
